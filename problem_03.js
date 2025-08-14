@@ -17,6 +17,7 @@ function bestTeam(player1, player2) {
     return player1.name;
   }
 }
+
 console.log(
   bestTeam(
     { name: 'Brazil', foul: 5, cardY: 1, cardR: 0 },

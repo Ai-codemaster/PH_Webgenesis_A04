@@ -8,3 +8,5 @@ function totalFine(fare) {
 
   return totalAmount;
 }
+
+console.log(totalFine(200));

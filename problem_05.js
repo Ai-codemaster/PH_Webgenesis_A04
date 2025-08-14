@@ -18,11 +18,14 @@ function resultReport(marks) {
 
   const result = { finalScore: average, pass: pass, fail: fail };
 
-  if(isNaN(result.finalScore)){
+  if (isNaN(result.finalScore)) {
     result.finalScore = 0;
   }
   return result;
 }
 
-const arr = [99, 87, 67, 12 ,87];
-console.log(resultReport(arr));
+console.log(resultReport([]));
+console.log(resultReport([98, 87, 67, 91, 92, 33, 87]));
+console.log(resultReport([99, 87, 67, 12, 87]));
+console.log(resultReport([99]));
+console.log(resultReport(100));

@@ -17,8 +17,12 @@ function resultReport(marks) {
   const average = Math.round(sum / marks.length);
 
   const result = { finalScore: average, pass: pass, fail: fail };
+
+  if(isNaN(result.finalScore)){
+    result.finalScore = 0;
+  }
   return result;
 }
 
-const arr = 100;
+const arr = [99, 87, 67, 12 ,87];
 console.log(resultReport(arr));
